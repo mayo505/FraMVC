@@ -1,0 +1,36 @@
+{
+    "name":         "mayo505/framvc",
+    "description":  "Simple MVC framework",
+    "keywords":     ["mvc", "php", "framework"],
+    "type":         "fra",
+    "license":      "MIT",
+    "authors":      [
+        {
+            "name":      "Marek Turis",
+            "email":     "marek.turis@gmail.com"
+        }
+    ],
+
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Mayo505\\": "src/Mayo505/"
+        },
+      "files" : [
+        "Mayo505/Framvc/helpers.php"
+      ],
+
+      "classmap" : [
+        "Mayo505/Framvc/Facades/"
+      ]
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.2.x-dev"
+        }
+    }
+}
